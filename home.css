@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 auto;
+    background-color: #333;
+    max-width: 1200px;
+    box-shadow: 0 0 15px;
+    /* padding: 10px; */
+}
+
+header{
+    display: flex;
+    padding: 10px;
+    background-color: #222;
+    /* margin: 10px; */
+}
+
+header .header-items{
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-items a:hover{
+    color: blue;
+}
+
+header .header-items a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header .header-name{
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: center;
+}
+header .header-name h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: aquamarine;
+}
+header .header-login .image1{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+header .header-login .login-img{
+    justify-content: flex-end;
+}
+
+.my-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: saturate(0);
+}
+img:hover{
+    filter: saturate(1);
+}
+
+.login-title button{
+    background-color: red;
+    border-radius: 7px;
+    color:#fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* main starts  */
+.body{
+    display: flex;
+}
+
+.body .searching{
+    flex:1;
+    border: 1px solid white;
+    color:#fff;
+    padding: 5px;
+}
+
+.body .product{
+    flex: 2;
+    border: 1px solid white;
+}
+
+.pri{
+    margin-top: 7px;
+}
+
+.payment{
+    margin-top: 7px;
+}
+.body .add{
+    flex: 1;
+    border: 1px solid white;
+}
+
+/* products starts  */
+.product-image{
+    height: 90px;
+    width: 90px;
+    /* padding: 7px; */
+}
+.product-img{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    border: 1px solid white;
+    margin-top: 5px;
+
+}
+
+.product-img .product-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.product-img:nth-child(1){
+    margin-top: 0px;
+}
+
+.product-image-details{
+    color: #fff;
+    /* width: 50px; */
+}
+ .product-table{
+    /* margin: 5px; */
+    display: grid;
+    grid-template-rows: repeat(2,minmax(0,1fr));
+ }
+ h4{
+    color: #fff;
+    text-transform: uppercase;
+ }
+
+ .product-image-details .price{
+    background-color: red;
+    width: 90px;
+    border-radius: 7px;
+    padding: 5px;
+ }
+
+ .product-image-details button{
+    background-color: green;
+    padding: 5px;
+    border-radius: 7px;
+    margin-top: 3px;
+ }
+
+ /* aside starts  */
+
+ .add{
+    background-image: url(images/bkash.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+ }
+
+ footer{
+    display: flex;
+    padding: 10px;
+ }
+
+ footer .copyright{
+    flex: 3;
+    color: #fff;
+    font-size: 1.2rem;
+ }
+ footer .media{
+    flex: 1;
+ }
+
+ .media a{
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    float: right;
+ }
+.media a:hover{
+    color: blue;
+    scale: 1.2;
+}
+
+@media (max-width:776px){
+    header{
+        flex-direction: column;
+    }
+    .header-items{
+        flex-direction: column;
+        /* padding: 10px; */
+    }
+    .header-items a{
+        padding: 5px;
+    }
+    .header-name{
+        padding: 7px;
+    }
+    header .header-login{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    header .header-items a:hover{
+        width: 250px;
+        background-color: #333;
+        border-radius: 10px;
+        /* align-items: center; */
+        text-align: center;
+    }
+
+}
